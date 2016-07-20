@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'HelveticaNeue Cyr';
+    src: url('../fonts/HelveticaNeueCyr-Thin.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+body {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  background: #34495E;
+  font-family: 'HelveticaNeue Cyr', sans-serif;
+  color: #d5d5d5;
+}
+
+::selection {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.stopwatch {
+  width: 100%;
+}
+
+.stopwatch__wrapper {
+  height: 50%;
+  padding-top: 15%;
+  box-sizing: border-box;
+}
+
+.stopwatch__digits {
+  text-align: center;
+}
+
+.stopwatch__digits span {
+  font-size: 120px;
+  transition: all 1s;
+  animation-name: upscale;
+  animation-duration: 1s;
+}
+
+@keyframes upscale {
+  0% {font-size: 0%;}
+  100% {font-size: 120px;}
+}
+
+.stopwatch__digits span:hover {
+  color: white;
+  transition: all .2s;
+}
+
+.stopwatch__digits:last-child {
+  opacity: 0;
+}
+
+.stopwatch__buttons {
+  margin: 50px 0;
+  text-align: center;
+  animation-name: fadein;
+  animation-duration: 1s;
+}
+
+@keyframes fadein {
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+.stopwatch__start{
+  background:#27AE60;
+}
+.stopwatch__start:hover, .stopwatch__start:active{
+  background:#0B9A49;
+  transition: all 0.2s;
+}
+.stopwatch__reset{
+  background:#E74C3C;
+}
+.stopwatch__reset:hover, .stopwatch__reset:active{
+  background:#C92918;
+  transition: all 0.2s;
+}
+.stopwatch__split{
+  background:#E67E22;
+}
+.stopwatch__split:hover, .stopwatch__split:active{
+  background:#CE6E19;
+  transition: all 0.2s;
+}
+.stopwatch__start, .stopwatch__split, .stopwatch__reset {
+  display: inline-block;
+  font-size: 40px;
+  line-height: 70px;
+  margin: 0 10px;
+  width: 220px;
+  transition: all .6s;
+  cursor:pointer;
+}
+
+.stopwatch__split-list {
+  font-size: 40px;
+  text-align: center;
+
+}
+
+.stopwatch__split-item {
+  color: silver;
+  margin: 10px 0;
+  animation-name: dropDown;
+  animation-duration: .3s;
+}
+
+@keyframes dropDown {
+  0% {margin-top: -40px; opacity: 0; color: red;}
+  100% {margin-top: 0; opacity: 1; color: silver;}
+}
+
+.stopwatch__copyright {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  color: gray;
+  transition: all .3s;
+}
+
+.stopwatch__copyright:hover {
+  color: silver;
+  cursor:pointer;
+}
+
+.active {
+  background: rgb(120, 131, 141);
+}
+
+.deleted {
+  opacity: 0;
+  transition: all .1s;
+  animation-name: dropUp;
+  animation-duration: .2s;
+}
+
+@keyframes dropUp {
+  0% {margin-top: 0; color: silver;}
+  100% {margin-top: -50px; color: red;}
+}
+
+.clearfix:after {
+content: '.';
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+
+@media (max-width:768px){
+  .stopwatch__digits span{
+      text-align:center;
+      font-size: 80px;
+  }
+  .stopwatch__start, .stopwatch__split, .stopwatch__reset {
+    line-height: 60px;
+  }
+}
+
+@media (max-width:468px){
+  .stopwatch__digits span{
+      text-align:center;
+      font-size: 60px;
+      }
+  .stopwatch__start, .stopwatch__split, .stopwatch__reset {
+    line-height: 55px;
+  }
+}
