@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url('../fonts/opensans-light-webfont.eot');
+  src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+       url('../fonts/opensans-light-webfont.woff') format('woff'),
+       url('../fonts/opensans-light-webfont.ttf') format('truetype'),
+       url('../fonts/opensans-light-webfont.svg#open_sanslight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: #34495E;
+  color: white;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 18px;
+}
+
+.wrapper {
+  position: relative;
+  margin: 150px 10%;
+  animation-name: fadeIn;
+  animation-duration: .5s;
+}
+
+@keyframes fadeIn{
+  0% {margin-left: 5%; opacity: 0;}
+  100% {margin-left: 10%; opacity: 1;}
+}
+
+.reg-form {
+  background: #243241;
+  border-left: 4px solid orange;
+  padding: 10px 0;
+  overflow: hidden;
+  animation-name: slideIn;
+  animation-duration: 1.5s;
+}
+
+@keyframes slideIn {
+  0% {width: 0; border-right: 4px solid rgba(255, 165, 0, 1);}
+  35% {width: 105px;}
+  40% {width: 105px; border-right: 4px solid rgba(255, 165, 0, 1);}
+  100% {width: 99%; border-right: 4px solid rgba(255, 165, 0, 0);}
+}
+
+.input-wrapper {
+  min-width: 750px;
+  animation-name: slideIn2;
+  animation-duration: .5s;
+}
+
+@keyframes slideIn2 {
+  0% {margin-left: -105px;}
+  100% {margin-left: 0;}
+}
+
+.form__label {
+  display: inline-block;
+  width: 5em;
+  padding: 7px;
+  margin: 4px;
+}
+
+.form__input-text {
+  width: 200px;
+  color: white;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 18px;
+  background: #151b21;
+  border: none;
+  border-right: 4px solid orange;
+  padding: 4px 10px;
+  transition: all .5s;
+  animation-name: moveIn;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0, .75, .75, 1);
+}
+
+@keyframes moveIn{
+  0% {width: 0;}
+  25% {width: 0;}
+  100% {width: 200px;}
+}
+
+.form__input-text:hover, .form__input-text:focus {
+  width: 300px;
+  background: #1f2021;
+}
+
+.form__input-text:focus {
+  color: black;
+  background: #1f2021;
+  outline: none;
+}
+
+.form__input-text:focus + .tooltip {
+  color: orange;
+}
+
+::-webkit-input-placeholder{
+  font-size: 12px;
+  line-height: 22px;
+  color: #ccc;
+}
+
+.show-help {
+  background: #151b21;
+  color: gray;
+  border: none;
+  width: 120px;
+  height: 40px;
+  margin: 40px 0 0;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 18px;
+  outline: none;
+  transition: all .5s;
+  animation-name: slideIn3;
+  animation-duration: 3s;
+}
+
+@keyframes slideIn3 {
+  0% {margin-left: -120px;}
+  75% {margin-left: -120px;}
+  100% {margin-left: 0;}
+}
+
+.show-help:hover {
+  background: #1f2021;
+  color: white;
+}
+
+.show-help:active {
+  background: #1f2021;
+  transition: all .1s;
+}
+
+.tooltip {
+  color: gray;
+  position: relative;
+  display: inline-block;
+  line-height: 24px;
+  opacity: 0;
+  margin-left: -50px;
+  margin-bottom: -4px;
+  overflow: hidden;
+  transition: all .5s;
+}
+
+.tooltip--show {
+  margin-left: 20px;
+  opacity: 1;
+}
+
+.tooltip--hide {
+  margin-bottom: -20px;
+  opacity: 0;
+}
