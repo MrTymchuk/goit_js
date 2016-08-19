@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Homework 9-10</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="css/jquery.selectbox.css" type="text/css" rel="stylesheet" />
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>	
+	<script src="js/jquery.jcarousel-core.min.js"></script>
+	<script src="js/jquery.jcarousel-control.min.js"></script>
+	<script src="js/jquery.jcarousel-pagination.min.js"></script>
+	<script src="js/jquery.jcarousel-autoscroll.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/jquery.checkbox.js"></script>
+	<script type="text/javascript" src="js/jquery.selectbox-0.2.js"></script>	
+</head>
+<body>
+	<!-- Menu -->
+	<div class="menu-box">
+		<ul class="menu clearfix">
+			<li><a href="">Item 1</a></li>
+			<li><a href="">Item 2</a></li>
+			<li class="dropdown"><a href="">Item 3</a>
+				<ul class="sub-menu">
+					<li><a href="">Item 3.1</a></li>
+					<li><a href="">Item 3.2</a></li>				
+					<li class="dropdown"><a href="">Item 3.3</a>
+						<ul class="sub-menu">
+							<li><a href="">Item 3.3.1</a></li>
+							<li class="dropdown"><a href="">Item 3.3.2</a>
+								<ul class="sub-menu">
+									<li><a href="">Item 3.3.2.1</a></li>
+									<li><a href="">Item 3.3.2.2</a></li>				
+									<li><a href="">Item 3.3.2.3</a></li>							
+								</ul>
+							</li>				
+							<li><a href="">Item 3.3.3</a></li>							
+						</ul>
+					</li>				
+					<li><a href="">Item 3.4</a></li>				
+				</ul>
+			</li>
+			<li><a href="">Item 4</a></li>
+			<li><a href="">Item 5</a></li>
+		</ul>
+	</div>
+
+	<div class="wrapper-checkbox-select">
+		<!-- Selectbox -->
+		<form action="">
+			<select name="country_id" id="country_id" tabindex="1">
+			<option value="">-- Select Item --</option>
+			<optgroup label="Item 1">
+				<option value="1">Item 1.1</option>
+				<option value="9">Item 1.2</option>
+			</optgroup>
+			<optgroup label="Item 2">
+				<option value="2">Item 2.1</option>
+				<option value="3">Item 2.2</option>
+				<option value="6">Item 2.3</option>
+				<option value="7" disabled="disabled">Item 2.4</option>
+				<option value="8">Item 2.5</option>
+			</optgroup>
+			<optgroup label="Item 3" disabled="disabled">
+				<option value="5">Item 3.1</option>
+				<option value="11">Item 3.1</option>
+			</optgroup>
+			<option value="4">Item 4</option>
+			<option value="10">Item 5</option>
+		</select>
+	</form>
+	<br>
+
+	<!-- CSS checkbox -->
+	<form action="">
+		<div>
+			<input type="checkbox" class="form__checkbox" id="id-1">
+			<label for="id-1" class="label-checkbox">CSS Checkbox 1</label>
+		</div>
+		<div>
+			<input type="checkbox" class="form__checkbox" id="id-2">
+			<label for="id-2" class="label-checkbox">CSS Checkbox 2</label>
+		</div>
+		<div>
+			<input type="checkbox" class="form__checkbox" id="id-3">
+			<label for="id-3" class="label-checkbox">CSS Checkbox 3</label>	
+		</div>
+	</form>
+	<br>
+
+	<!-- jQuery checkbox -->
+	<form action="" class="white">
+		<div>				
+			<span class="niceCheck"><input type="checkbox" id="ch1"></span>
+			<label for="ch1">jQuery Chexkbox 1</label>
+		</div>
+		
+		<div>
+			<span class="niceCheck"><input type="checkbox" id="ch2"></span>
+			<label for="ch2" >jQuery Chexkbox 2</label>
+		</div>
+
+		<div>
+			<span class="niceCheck"><input type="checkbox" id="ch3"></span>
+			<label for="ch3" >jQuery Chexkbox 3</label>
+		</div>
+	</form>
+	</div>
+
+	<!-- Carousel -->
+	<div class="jcarousel-wrapper">
+		<div class="jcarousel">
+			<ul>
+				<li><img src="img/image1.jpg"></li>
+				<li><img src="img/image2.jpg"></li>
+				<li><img src="img/image3.jpg"></li>
+				<li><img src="img/image4.jpg"></li>
+				<li><img src="img/image1.jpg"></li>
+			</ul>	
+		</div>
+	</div>
+	<div class="box-pagination">
+		<a class="jcarousel-prev" href="#">Prev</a>
+		<div class="jcarousel-pagination">
+	        <!-- Pagination items will be generated in here -->
+	    </div>
+	  	<a class="jcarousel-next" href="#">Next</a>
+	 </div>
+
+</body>
+</html>
