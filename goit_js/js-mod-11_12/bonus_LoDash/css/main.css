@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0; /*обнуление всех стилей на странице*/
+}
+
+body{
+    font: normal 13pt Times;
+    background: #34495E;
+    margin:40px;
+}
+.wrapper {
+    width: 512px;
+    margin: auto;
+    background: #fffef9; /* Цвет фона блока*/
+    padding: 54px 50px 72px 50px; /* Поля вокруг текста*/
+    border-color: #d5d5d5; /* Цвет границы блока*/
+    border-style: solid; /* Стиль линии вокруг блока*/
+    border-width: 1px; /* Толщина линии вокруг блока*/
+-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.70);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.70);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.70);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    
+}
+.learning_reasons {
+	border-top: 1px solid #7a7a7a;
+	border-bottom: 1px solid #7a7a7a;
+}
+
+.contacts {
+	border-bottom: 1px solid #7a7a7a;
+}
+
+img{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 275px;
+}
+.photo{
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 15px;
+}
+h1 {
+    font: bold 16pt Times;
+    text-align: center;
+    
+}
+
+h3{
+    text-indent: 14px; /* Отступ первой строки */
+    font: normal 13pt Times;
+    margin-top: 29px;
+    margin-bottom: 19px;
+}
+p{
+    text-indent: 14px; /* Отступ первой строки */
+    font-size: 16px;
+
+   
+}
+
+#work{
+    margin-top: 0;
+}
+
+#contact_phone #phone_number{
+    margin-bottom: 10px;
+}
+
+#social_profile #feedback{
+    margin-bottom: 11px;
+}
+
+#social_network{
+    margin-bottom: 20px; 
+}
+
+ul{
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 36px;
+    margin-left: 40px;
+    margin-bottom: 19px;
+}
