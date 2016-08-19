@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JS Homework 11-12</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/script_profile.js"></script>
+    <script src="js/jquery.carousel.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <script type="text/template" id="test">
+    <div class="wrapper">
+        <h1><%=name%></h1>
+        <p class="photo">
+            <img src="<%=photo_url%>" alt="my profile photo">
+        </p>
+        <h3 id="work"><%=work%></h3>
+        <div class="learning_reasons">
+            <h3><%=learning_reasons%></h3>
+            <ul class="profile_list">
+                <% for ( var i = 0; i < reasons_list.length; i++ ) { %>
+                <li><%=reasons_list[i]%></li>
+                    <% }; %>
+        </ul>
+        </div>
+        <div class="contacts">
+            <h3  id="contact_phone"><%=contact_phone%></h3>
+            <p id="phone_number"><%=phone_number%></p>
+            <h3 id="social_profile"><%=social_profile%></h3>
+            <p id="social_network">
+                <a href="<%=social_network%>"><%=facebook_url%></a>
+        </p>
+        </div>
+        <h3 id="feedback"><%=feedback_title%></h3>
+        <p><%=feedback%></p>
+    </div>
+
+    </script>
+    <div class="carousel-container">
+        <div class="carousel-arrow-left navy prev-slide"><span>	&lang;</span></div>
+        <div class="carousel-hider slide-list">
+            <ul class="carousel-list slide-wrap">
+                <li class="carousel-element slide-item">
+                    <a href="http://67.media.tumblr.com/05aaa75eb6d0513a72213df7ac6e1169/tumblr_o28ojmRd9o1v7hvdqo1_500.jpg" class="fancybox">
+                        <img src="http://67.media.tumblr.com/05aaa75eb6d0513a72213df7ac6e1169/tumblr_o28ojmRd9o1v7hvdqo1_500.jpg">
+                        <p>Life Style</p>
+                    </a>
+                </li>
+                <li class="carousel-element slide-item">
+                    <a href="http://65.media.tumblr.com/2f35534518ec57ae9e15d3c375753f15/tumblr_o28odfJwsy1v7hvdqo1_500.jpg" class="fancybox">
+                       <img src="http://65.media.tumblr.com/2f35534518ec57ae9e15d3c375753f15/tumblr_o28odfJwsy1v7hvdqo1_500.jpg">
+                        <p>Life Style/p>
+                    </a>
+                </li>
+                <li class="carousel-element slide-item">
+                    <a href="http://67.media.tumblr.com/7ca51ca66a5d6e529429e5d641bec6af/tumblr_o28oesMAWf1v7hvdqo1_500.jpg" class="fancybox">
+                       <img src="http://67.media.tumblr.com/7ca51ca66a5d6e529429e5d641bec6af/tumblr_o28oesMAWf1v7hvdqo1_500.jpg">
+                        <p>Life Style</p>
+                    </a>
+                </li>
+                <li class="carousel-element slide-item">
+                    <a href="http://67.media.tumblr.com/3f5b9414eccd61477f08023cbf61d31c/tumblr_o28oggkuar1v7hvdqo1_500.jpg" class="fancybox">
+                       <img src="http://67.media.tumblr.com/3f5b9414eccd61477f08023cbf61d31c/tumblr_o28oggkuar1v7hvdqo1_500.jpg">
+                        <p>Life Style</p>
+                    </a>
+                </li>
+                <li class="carousel-element slide-item">
+                    <a href="http://67.media.tumblr.com/7ca51ca66a5d6e529429e5d641bec6af/tumblr_o28oesMAWf1v7hvdqo1_500.jpg" class="fancybox">
+                       <img src="http://67.media.tumblr.com/7ca51ca66a5d6e529429e5d641bec6af/tumblr_o28oesMAWf1v7hvdqo1_500.jpg">
+                        <p>Life Style</p>
+                    </a>
+                </li>
+
+            
+            </ul>
+        </div>
+        <div class="carousel-arrow-right navy next-slide"><span>&rang;</span></div>
+    </div>
+
+</body>
+</html>
