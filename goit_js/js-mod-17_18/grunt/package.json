@@ -1,0 +1,20 @@
+{
+  "name": "javascript_homework_17-18",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "npm": "^2.15.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
