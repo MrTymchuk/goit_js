@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HomeWork JavaScript 23-24</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<script src="http://use.edgefonts.net/reenie-beanie:n5:all.js"></script>
+	<script src="http://use.edgefonts.net/aguafina-script:n4:all.js"></script>
+	<script data-main="js/app" src="js/require.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/stikystyle.css">
+</head>
+<body>
+	<script type="text/template" id ="data-template">
+	<!—-==========--========== START data ==========--==========-—>
+	<div class="data">
+		<h1 class="data__title">ToDo List</h1>
+		<div class="data__result">Total notes: <span class="data__counter">0</span></div>
+		<!—-==========--========== START controls ==========--==========-—>
+		<div class="data__input">
+			<input type="text" placeholder="Write task here" class="data__input--value">
+			<button class="data__input--add">Add</button>
+		</div>
+		<!--==========--========== END controls ==========--==========-->
+		<!—-==========--========== START data__list ==========--==========-—>
+		<ul class="data__list"></ul>
+		<!--==========--========== END data__list ==========--==========-->
+
+	</div>
+	<!--==========--========== END data ==========--==========-->
+	</script>
+	<script type="text/template" id ="list-template">
+		<% for(i=0; i < data.length; i++){%>
+		<li class="data__list__item"><a href="#"><%= data[i] %><span data-value="<%= data[i] %>" class="item-delete ">&#xe803;</span><span data-value="<%= data[i] %>" class="item-edit fa fa-pencil"></span></a></li>
+		<%}; %>
+	</script>
+
+</body>
+</html>
