@@ -1,0 +1,34 @@
+@font-face{
+	font-family:'notify-iconfont';
+	font-weight:normal;
+	font-style:normal;
+	src:url('../fonts/notify-iconfont.eot');
+	src:url('../fonts/notify-iconfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/notify-iconfont.woff') format('woff'),
+		url('../fonts/notify-iconfont.ttf') format('truetype'),
+		url('../fonts/notify-iconfont.svg#icomoonregular') format('svg');
+}
+@media screen and ('-webkit-min-device-pixel-ratio:0'){
+	@font-face{
+		font-family:notify-iconfont;
+		src:url('../fonts/notify-iconfont.svg') format('svg');
+	}
+}
+
+.icon{
+	font-family:notify-iconfont;
+	&.android{&:before {content: "\e900";}}
+	&.apple{&:before {content: "\e911";}}
+	&.windows{&:before {content: "\e90f";}}
+
+	// &.web{&:before {content: "\e902";}}
+	// &.flat{&:before {content: "\e907";}}
+	// &.setting{&:before {content: "\e90a";}}
+
+	&.twitter{&:before {content: "\e910";}}
+	&.facebook{&:before {content: "\e90b";}}
+	&.pinterest{&:before {content: "\e90e";}}
+	&.google{&:before {content: "\e90c";}}
+	&.linkedin{&:before {content: "\e90d";}}
+	&.youtube{&:before {content: "\e901";}}
+}

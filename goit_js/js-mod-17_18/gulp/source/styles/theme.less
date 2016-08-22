@@ -1,0 +1,47 @@
+body{
+	font-size:16px;
+	line-height:1.5;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color:#424242;
+	overflow-x:hidden;
+	@media (max-width:768px){
+		&.ov-h{
+			overflow:hidden;
+		}
+	}
+}
+
+::selection{
+    background-color:#94D28F;
+    color:#fff;
+    text-shadow:none;
+}
+
+a{
+	color:#4fb448;
+	&:hover,
+	&:focus,
+	&:active{
+		color:#71c46b;
+	}
+}
+
+h2,h3,h4 {
+	font-family: "Raleway";
+	font-weight: 600;
+	color: #222222;
+}
+h2 {
+	font-size: 22px;
+	margin:30px 0;
+	}
+h3 {
+	font-size: 18px;
+	}
+p {
+	font-family: "Helvetica";
+	font-size: 16px;
+	color: #848484;
+	margin:0;
+}
