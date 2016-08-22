@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Homework JavaScript 13-14</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+  <div class="container">
+  <div class="col-md-push-2 col-md-8 content">
+      <h2 class="text-left">Тест по программированию</h2>
+    <form>
+      <div class="questions">
+      </div>
+      <div class="submit">
+        <button type="submit" class="check btn btn-success btn-primary">Проверить результаты</button>
+        <button type="reset" class="reset btn btn-danger btn-sm">Сбросить ответы</button>
+      </div>
+    </form>
+  </div>
+  </div>
+  <script type="text/html" id = "test">
+    <% for (var i = 0; i <data.length; i++) { %>                 <!-- цикл вывода вопросов for -->
+      <div class="box<%=i%>">                                    <!-- контейнер с вопросом, ответом и чекбокс -->
+        <h4><%=data[i].question%></h4>                           <!-- сам текст вопроса -->
+        <% for (var k = 0; k <data[i].answer.length; k++) { %>   <!-- цикл вывода вариантов ответов for -->
+          <div class="checkbox">                                 <!-- контейнер с ответом и чекбоксом -->
+              <label>                                            <!-- сам текст ответа -->
+                <input type="checkbox"><%=data[i].answer[k]%>    <!-- соответственный ответу чекбокс -->
+              </label>
+          </div>
+        <%}; %>
+      </div>
+    <%}; %>
+  </script>
+<script src="js/tmpl.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
