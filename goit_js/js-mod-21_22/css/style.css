@@ -1,0 +1,49 @@
+* {
+  font-family: Arial;
+}
+
+label,
+input {
+  cursor: pointer;
+}
+
+.content{
+  margin: 50px 0 0 0;
+}
+
+.modalWindow {
+  background: white;
+  border-radius: 5px;
+  left:50%;
+  margin-left: -250px;
+  padding: 20px;
+  position: absolute;
+  top:10%;
+  width: 630px;
+  z-index: 10;
+}
+
+.modalWindow button {
+  float: right;
+}
+
+.modalWindow-overlay {
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+  left:0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.text-center{
+  margin-bottom: 30px;
+}
+
+.text-left {
+  margin-bottom: 30px;
+}
+
+.submit {
+  margin-top: 15px;
+}
