@@ -3,7 +3,7 @@ $(function() {
     $('.search-form').on('submit', function() {
         var enteredQuery = $('#entered-query').val();
         $.ajax({
-            url: "http://api.riffsy.com/v1/search?tag=" + enteredQuery + "&limit=10",
+            url: "//api.riffsy.com/v1/search?tag=" + enteredQuery + "&limit=10",
             success: function(data, textStatus) {
                 console.log('Success: ', data);
                 var ul = document.createElement('ul');
